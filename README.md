@@ -1,12 +1,12 @@
 # Sentiment-analysis-with-tweets-about-cancer-misinformation
 This notebook is part of my master's thesis.
 
-The notebook of this repository is divided into two main parts. In the first part, the entailment recognition and sentiment classification models are inferred from previously mined tweets. In the second section, the code for an analysis and visualization of the classified sentiments is found.
+The notebook of this repository is divided into two main parts. In the first part,  carry out inference with the entailment recognition and sentiment classification models over previously mined tweets. In the second section, the code for an analysis and visualization of the classified sentiments is found.
 
 It should be noted that the data mined from twitter as well as the keys to mine in the API are confidential. The entailment recognition model is also a private access model.
 
 # Model Inference
- The entailment recognition model was used to filter cancer misinformation tweets. The texts of the tweets were compared to a series of mined hoaxes. With this step you want to eliminate noise and tweets that are not related to the disinformation tracked.
+ The entailment recognition model was used to filter cancer misinformation tweets. The texts of the tweets were compared to a set of collected hoaxes trying to detect if the tweets were actually entailed with those hoaxes. With this step I pretend to eliminate noise and tweets that are not related to the disinformation tracked.
 
 Next, two sentiment classification models were applied to the filtered tweets.
 - Polarity model: This model can be found on the Hugging face hub under the name "cardiffPLN/twitter-roberta-base-sentiment-latest". It is a model that was specifically fine-tuned to classify polarity in tweets. The model is able to classify the text between positive, neutral or negative
